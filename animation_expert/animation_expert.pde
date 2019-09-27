@@ -16,7 +16,7 @@
    clear();
    background(255);
    
-   for(int i = 0; i < 50; i++){creature(i*30);}
+   for(int i = 0; i < 30; i++){creature(i*30);}
  }
  
  
@@ -33,8 +33,8 @@ void creature(int Y){      //Y is y position of creature
    if (x >= width){_switch = 1;}
    if (x < 0){_switch = 0;}
 
-   if (_switch == 1){photo = loadImage("dickbuttt.png");_switch = 2;}
-   if (_switch == 0){photo = loadImage("dickbutt.png");_switch = 3;}
+   if (_switch == 1){photo = loadImage("dickbuttt.jpg");_switch = 2;}
+   if (_switch == 0){photo = loadImage("dickbutt.jpg");_switch = 3;}
    
    image(photo, 
    x, 
