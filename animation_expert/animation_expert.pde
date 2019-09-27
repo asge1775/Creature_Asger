@@ -16,11 +16,11 @@
    clear();
    background(255);
    
-   for(int i = 0; i < 30; i++){creature(i*30);}
+   for(int i = 0; i < 30; i++){creature(i*30, i+1);}
  }
  
  
-void creature(int Y){      //Y is y position of creature
+void creature(int Y, int scale){      //Y is y position of creature
   
     /*-----------switch cases-----------------------
     switch case 0 = change to left facing picture
@@ -39,8 +39,8 @@ void creature(int Y){      //Y is y position of creature
    image(photo, 
    x, 
    sin(y/2) * 50 + Y,
-   size / 10,
-   size / 10);
+   size / scale,
+   size / scale);
    
    if (_switch == 2){x = x - 5;}
    if (_switch == 3){x = x + 5;}
